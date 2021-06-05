@@ -21,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/hello/{name}', 'App\Http\Controllers\HelloController@hello');
 Route::post('/times', 'App\Http\Controllers\timesController@times');
 
+Route::apiResource('tasks','App\Http\Controllers\Api\TaskController');
